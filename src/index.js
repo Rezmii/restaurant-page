@@ -1,6 +1,15 @@
-import { domManipulation } from "./utils/dom-manipulation";
+import { changeToHomeContent } from "./utils/renderHomeContent";
+import { changeToMenuContent } from "./utils/renderMenuContent";
+import { changeToContactContent } from "./utils/renderContactContent";
 import "./styles/general.css";
 
-console.log("DUPA");
+export const contentDiv = document.querySelector("#content");
+const homeButton = document.querySelector("#home-button");
+const menuButton = document.querySelector("#menu-button");
+const contactButton = document.querySelector("#contact-button");
 
-domManipulation();
+changeToHomeContent();
+
+homeButton.addEventListener("click", changeToHomeContent);
+menuButton.addEventListener("click", changeToMenuContent);
+contactButton.addEventListener("click", changeToContactContent);
