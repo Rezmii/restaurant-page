@@ -5,7 +5,7 @@ export const domManipulation = () => {
   const pElement = document.createElement("p");
 
   h1Element.textContent = "Restaurant Name";
-  imgElement.src = "menu";
+  imgElement.src = "menu.png";
   pElement.textContent = "Welcome";
 
   contentDiv.appendChild(h1Element);
