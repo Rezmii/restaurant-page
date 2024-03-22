@@ -1,1 +1,1 @@
-console.log("DUPA");
+(()=>{"use strict";console.log("DUPA"),(()=>{const e=document.querySelector("#content"),t=document.createElement("h1"),n=document.createElement("img"),c=document.createElement("p");t.textContent="Restaurant Name",n.src="menu",c.textContent="Welcome",e.appendChild(t),e.appendChild(n),e.appendChild(c)})()})();
